@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+     <!--Import Google Icon Font-->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <!--Import materialize.css-->
+     <link rel="stylesheet" href="./css/materialize.min.css"/>
+     <link rel="stylesheet" href="./css/style.css">
+
+     <!--Let browser know website is optimized for mobile-->
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <title>Calculadora Bloco 01</title>
+</head>
+<body>    
+  
+  
+<div class="app" >
+
+  <h4>Calculadora Bloco I</h4> 
+
+      <div class ="row ">
+        <div class="botoes1">
+
+            <div class="col s12 m6 l6">
+                <a class="btn-floating btn-large waves-effect waves-light  green darken-2 btn botaoBola" id="estimarGeracao">Geração</a>
+            </div>
+
+            <div class="col s12 m6 l6">
+                <a class="btn-floating btn-large waves-effect waves-light yellow darken-2 btn botaoBola black-text"  id="estimarVazao">Vazão</a>
+            </div>
+        </div>
+      </div>
+          
+
+            
+            <div class="row">
+                <form class="col s12 m12 l12">
+                  <div class="row">
+
+                    <div class="input-field col s12 m6">
+                        <input id="queima11" type="number" class="validate" name="queima11" disabled required>
+                        <label for="queima11">Queima da HRSG 11 (m³/h)</label>
+                    </div>
+
+                    <div class="input-field col s12 m6">
+                        <input id="queima12" type="number" class="validate" name="queima12" disabled required="qw">
+                        <label for="queima12">Queima da HRSG 12 (m³/h)</label>
+                    </div>
+
+                    <div class="input-field col s12 m6">
+                        <input id="vazaoVapor" type="number" class="validate" name="vapor" disabled>
+                        <label for="vapor">Exportação de vapor (t/h)</label>
+                    </div>
+
+                    <div class="input-field col s12 m6">
+                        <input id="geracao" type="number" class="validate" disabled>
+                        <label for="carga">Carga da TV18 (MW)</label>
+                    </div>
+
+                  </div>
+                </form>
+              </div>         
+        
+              <div class="row result">
+                <span class="col l12"></span>
+              </div>
+
+              
+            <div class="row" id="radioButton">
+                <h5>Modo de operação</h5>
+                <div class="col s6 m6 l6">
+                    <label>
+                        <input type="radio" class="with-gap" name="modo" id="extracao" value="extracao" checked><span>Extração</span>
+                    </label>
+                </div>
+
+                <div class="col s6 m6 l6">
+                    <label>
+                        <input type="radio" class="with-gap" name="modo" id="bypass" value="bypass"><span>ByPass</span>
+                    </label>
+                </div>
+                
+            </div>
+            
+            <div class="botoesCalcular row">
+                <div class="botaoCalcular col s6 m6 l6">
+                    <a class="waves-effect waves-light btn-small btn"  id="calculaGeracao">Calcular Geração</a>
+                </div> 
+                <div class="botaoCalculaVazao col s6 m6 l6">
+                    <a class="waves-effect waves-light btn-small btn" id="calculaVazao">Calcular Vazão</a>
+                </div> 
+            </div>
+
+            
+        </div>
+        <footer class="page-footer waves-effect waves-light">        
+          <span class="spanFooter">© 2020 Desenvolvido por Romário Oliveira</span>
+          <img src="./img/logo-petro.png" alt="">       
+          </footer>                
+  
+    <script src="./js/materialize.min.js"></script>
+    <script src="./js/index.js"></script>
+
+</body>
+
+</html>

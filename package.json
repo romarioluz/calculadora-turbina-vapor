@@ -1,0 +1,29 @@
+{
+  "name":"calculadora",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder main.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^10.1.5",
+    "electron-builder": "^22.9.1"
+  },
+  "build": {
+    "appId": "calculadora bloco 1",
+    "productName": "Calculadora Bloco I",
+    "directories": {
+      "output": "App Calculadora Bloco I"
+    },
+    "publish": null,
+    "win": {
+      "icon": "logo-oficial.png",
+      "target": "nsis"
+    }
+  }
+}
